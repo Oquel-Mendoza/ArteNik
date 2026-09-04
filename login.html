@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar | ArteNik</title>
+
+    <!-- Google Fonts y Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+
+    <main class="auth-container split-layout">
+        
+        <div class="auth-split-card">
+            
+            <!-- LADO IZQUIERDO: Información visual -->
+            <div class="auth-cover">
+                <div class="cover-content">
+                    <h2>Lo nuestro puede<br><span>convertirse</span><br>en tu negocio.</h2>
+                    <p>Descubre productos auténticos de Nicaragua, compra al por mayor y encuentra nuevas oportunidades para hacer crecer tu emprendimiento.</p>
+                </div>
+            </div>
+
+            <!-- LADO DERECHO: Formularios -->
+            <div class="auth-content">
+                
+                <!-- Logo -->
+                <div class="auth-logo">
+                    <img src="assets/logo/logo.png" alt="Logo ArteNik">
+                </div>
+
+                <!-- FORMULARIO DE INICIAR SESIÓN -->
+                <form id="loginForm" class="auth-form active">
+                    
+                    <div class="auth-header">
+                        <h3>Bienvenido a ArteNik</h3>
+                        <p>Ingresa tus credenciales de acceso</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loginEmail">Correo Electrónico</label>
+                        <input type="email" id="loginEmail" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Contraseña</label>
+                        <input type="password" id="loginPassword" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="auth-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberMe"> Recordar mi sesión
+                        </label>
+                        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-btn">
+                        Ingresar a ArteNik
+                    </button>
+                    
+                    <p class="auth-switch">
+                        ¿No tienes una cuenta? <a href="#" id="showRegister">Regístrate</a>
+                    </p>
+                </form>
+
+                <!-- FORMULARIO DE REGISTRO (Oculto inicialmente) -->
+                <form id="registerForm" class="auth-form" style="display: none;">
+                    
+                    <div class="auth-header">
+                        <h3>Crear Cuenta</h3>
+                        <p>Únete a nuestra red de emprendedores</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerName">Nombre Completo</label>
+                        <input type="text" id="registerName" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerEmail">Correo Electrónico</label>
+                        <input type="email" id="registerEmail" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">Contraseña</label>
+                        <input type="password" id="registerPassword" placeholder="Crea una contraseña" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-btn">
+                        Crear mi cuenta
+                    </button>
+                    
+                    <p class="auth-switch">
+                        ¿Ya tienes cuenta? <a href="#" id="showLogin">Inicia sesión</a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Script de autenticación -->
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
