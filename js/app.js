@@ -683,7 +683,7 @@ function mostrarResumenPedido() {
 }   
 
 // ================================================
-// PERFIL Y SESIÓN ACTIVA
+// PERFIL Y SESIÓN ACTIVA (Desktop y Móvil)
 // ================================================
 
 const profileBtn = document.getElementById("profileBtn");
@@ -692,12 +692,15 @@ const dropdownName = document.getElementById("dropdownName");
 const dropdownEmail = document.getElementById("dropdownEmail");
 const logoutBtn = document.getElementById("logoutBtn");
 
+// Capturamos el nuevo botón del menú móvil
+const mobileAuthLink = document.getElementById("mobileAuthLink");
+
 if (profileBtn) {
     const activeUser = JSON.parse(localStorage.getItem("artenik_active_user"));
     const profileText = profileBtn.querySelector("span");
 
     if (activeUser) {
-        // Mostrar datos en el botón y en el menú
+        // --- 1. LÓGICA DESKTOP ---
         profileText.textContent = activeUser.nombre.split(" ")[0];
         
         if(dropdownName && dropdownEmail) {
@@ -705,31 +708,49 @@ if (profileBtn) {
             dropdownEmail.textContent = activeUser.email;
         }
 
-        // Mostrar/Ocultar el menú al hacer clic
         profileBtn.addEventListener("click", (e) => {
             e.stopPropagation();
             profileDropdown.classList.toggle("active");
         });
 
-        // Cerrar sesión al instante
-logoutBtn.addEventListener("click", () => {
-    localStorage.removeItem("artenik_active_user");
-    window.location.href = "login.html"; // Redirección inmediata
-});
+        logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("artenik_active_user");
+            window.location.href = "login.html"; 
+        });
 
-        // Cerrar el menú si se hace clic afuera
         document.addEventListener("click", (e) => {
             if (!profileDropdown.contains(e.target)) {
                 profileDropdown.classList.remove("active");
             }
         });
+
+        // --- 2. LÓGICA MÓVIL ---
+        if (mobileAuthLink) {
+            // Cambiamos el texto e ícono a Cerrar Sesión
+            mobileAuthLink.innerHTML = '<i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión';
+            mobileAuthLink.style.color = "#c75b5b"; // Color rojo para indicar salida
+            
+            mobileAuthLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                localStorage.removeItem("artenik_active_user");
+                window.location.href = "login.html"; 
+            });
+        }
+
     } else {
-        // Si no hay sesión, borrar el menú del HTML (opcional) y redirigir
+        // Si no hay sesión (Lógica de respaldo)
         if(profileDropdown) profileDropdown.remove();
         
         profileBtn.addEventListener("click", () => {
             window.location.href = "login.html";
         });
+
+        if (mobileAuthLink) {
+            mobileAuthLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.location.href = "login.html";
+            });
+        }
     }
 }
 
