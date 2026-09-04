@@ -12,7 +12,10 @@
 
     <title>ArteNik | Productos de nuestra tierra</title>
 
-    <!-- Google Fonts -->
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -20,12 +23,20 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Iconos -->
+
+    <!-- =========================================
+         ICONOS
+    ========================================== -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- CSS -->
+
+    <!-- =========================================
+         CSS
+    ========================================== -->
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -64,7 +75,9 @@
             </a>
 
 
-            <!-- MENÚ DESKTOP -->
+            <!-- =========================================
+                 MENÚ DESKTOP
+            ========================================== -->
 
             <nav class="nav-menu">
 
@@ -87,13 +100,20 @@
             </nav>
 
 
-            <!-- ACCIONES -->
+            <!-- =========================================
+                 ACCIONES
+            ========================================== -->
 
             <div class="nav-actions">
 
+
                 <!-- BUSCAR -->
 
-                <button class="nav-icon-btn" id="searchBtn" aria-label="Buscar">
+                <button
+                    class="nav-icon-btn"
+                    id="searchBtn"
+                    aria-label="Buscar"
+                >
 
                     <i class="fa-solid fa-magnifying-glass"></i>
 
@@ -102,7 +122,11 @@
 
                 <!-- CARRITO -->
 
-                <button class="nav-icon-btn cart-btn" id="cartBtn" aria-label="Carrito">
+                <button
+                    class="nav-icon-btn cart-btn"
+                    id="cartBtn"
+                    aria-label="Carrito"
+                >
 
                     <i class="fa-solid fa-bag-shopping"></i>
 
@@ -113,34 +137,74 @@
                 </button>
 
 
-                <!-- PERFIL -->
+                <!-- =========================================
+                     PERFIL
+                ========================================== -->
 
-                <!-- PERFIL -->
-<div class="profile-wrapper">
-    
-    <button class="nav-profile" id="profileBtn">
-        <i class="fa-regular fa-user"></i>
-        <span>Ingresar</span>
-    </button>
+                <div class="profile-wrapper">
 
-    <!-- Menú desplegable -->
-    <div class="profile-dropdown" id="profileDropdown">
-        <div class="profile-info">
-            <strong id="dropdownName">Usuario</strong>
-            <span id="dropdownEmail">correo@ejemplo.com</span>
-        </div>
-        <hr>
-        <button class="dropdown-item" id="logoutBtn">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión
-        </button>
-    </div>
+                    <button
+                        class="nav-profile"
+                        id="profileBtn"
+                    >
 
-</div>
+                        <i class="fa-regular fa-user"></i>
+
+                        <span>
+                            Ingresar
+                        </span>
+
+                    </button>
 
 
-                <!-- MENU MOBILE -->
+                    <!-- MENÚ DESPLEGABLE -->
 
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+                    <div
+                        class="profile-dropdown"
+                        id="profileDropdown"
+                    >
+
+                        <div class="profile-info">
+
+                            <strong id="dropdownName">
+                                Usuario
+                            </strong>
+
+                            <span id="dropdownEmail">
+                                correo@ejemplo.com
+                            </span>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <button
+                            class="dropdown-item"
+                            id="logoutBtn"
+                        >
+
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                            Cerrar sesión
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     BOTÓN MENÚ MOBILE
+                ========================================== -->
+
+                <button
+                    class="mobile-menu-btn"
+                    id="mobileMenuBtn"
+                    aria-label="Abrir menú"
+                >
 
                     <i class="fa-solid fa-bars"></i>
 
@@ -151,19 +215,43 @@
         </div>
 
 
-        <!-- MENÚ MOBILE -->
+        <!-- =========================================
+             MENÚ MOBILE
+        ========================================== -->
 
-        <!-- MENÚ MOBILE -->
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="#inicio">Inicio</a>
-            <a href="#catalogo">Catálogo</a>
-            <a href="#categorias">Categorías</a>
-            <a href="#como-funciona">Cómo funciona</a>
-            
-            <!-- Botón de autenticación móvil con ID -->
-            <a href="#" id="mobileAuthLink" style="margin-top: 10px;">
-                <i class="fa-solid fa-user"></i> Iniciar sesión
+        <div
+            class="mobile-menu"
+            id="mobileMenu"
+        >
+
+            <a href="#inicio">
+                Inicio
             </a>
+
+            <a href="#catalogo">
+                Catálogo
+            </a>
+
+            <a href="#categorias">
+                Categorías
+            </a>
+
+            <a href="#como-funciona">
+                Cómo funciona
+            </a>
+
+            <a
+                href="#"
+                id="mobileAuthLink"
+                style="margin-top: 10px;"
+            >
+
+                <i class="fa-solid fa-user"></i>
+
+                Iniciar sesión
+
+            </a>
+
         </div>
 
     </header>
@@ -171,13 +259,20 @@
 
 
     <!-- =========================================
-         HERO
+         CONTENIDO PRINCIPAL
     ========================================== -->
 
     <main>
 
 
-        <section class="hero" id="inicio">
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section
+            class="hero"
+            id="inicio"
+        >
 
             <div class="hero-container">
 
@@ -215,7 +310,11 @@
 
                     <div class="hero-buttons">
 
-                        <a href="#catalogo" class="btn btn-primary">
+
+                        <a
+                            href="#catalogo"
+                            class="btn btn-primary"
+                        >
 
                             Explorar catálogo
 
@@ -224,7 +323,10 @@
                         </a>
 
 
-                        <a href="#como-funciona" class="btn btn-outline">
+                        <a
+                            href="#como-funciona"
+                            class="btn btn-outline"
+                        >
 
                             ¿Cómo funciona?
 
@@ -236,6 +338,7 @@
                     <!-- ESTADÍSTICAS -->
 
                     <div class="hero-stats">
+
 
                         <div class="stat">
 
@@ -348,7 +451,10 @@
              CATEGORÍAS
         ========================================== -->
 
-        <section class="categories-section" id="categorias">
+        <section
+            class="categories-section"
+            id="categorias"
+        >
 
             <div class="section-container">
 
@@ -368,7 +474,10 @@
                     </div>
 
 
-                    <a href="#catalogo" class="view-all">
+                    <a
+                        href="#catalogo"
+                        class="view-all"
+                    >
 
                         Ver todo
 
@@ -383,9 +492,12 @@
                 <div class="categories-grid">
 
 
-                    <!-- CATEGORÍA -->
+                    <!-- ROPA TÍPICA -->
 
-                    <button class="category-card" data-category="Ropa típica">
+                    <button
+                        class="category-card"
+                        data-category="Ropa típica"
+                    >
 
                         <div class="category-image category-ropa">
 
@@ -408,7 +520,12 @@
                     </button>
 
 
-                   <button class="category-card" data-category="Artesanías">
+                    <!-- ARTESANÍAS -->
+
+                    <button
+                        class="category-card"
+                        data-category="Artesanías"
+                    >
 
                         <div class="category-image category-artesania">
 
@@ -431,7 +548,12 @@
                     </button>
 
 
-                    <button class="category-card" data-category="Accesorios">
+                    <!-- ACCESORIOS -->
+
+                    <button
+                        class="category-card"
+                        data-category="Accesorios"
+                    >
 
                         <div class="category-image category-accesorios">
 
@@ -454,30 +576,40 @@
                     </button>
 
 
-                   <button class="category-card" data-category="Hogar">
+                    <!-- HOGAR -->
 
-    <div class="category-image category-hogar">
+                    <button
+                        class="category-card"
+                        data-category="Hogar"
+                    >
 
-        <i class="fa-solid fa-house"></i>
+                        <div class="category-image category-hogar">
 
-    </div>
+                            <i class="fa-solid fa-house"></i>
 
-    <div class="category-info">
+                        </div>
 
-        <h3>
-            Hogar
-        </h3>
+                        <div class="category-info">
 
-        <span>
-            21 productos
-        </span>
+                            <h3>
+                                Hogar
+                            </h3>
 
-    </div>
+                            <span>
+                                21 productos
+                            </span>
 
-</button>
+                        </div>
+
+                    </button>
 
 
-                    <button class="category-card" data-category="Cultura">
+                    <!-- CULTURA -->
+
+                    <button
+                        class="category-card"
+                        data-category="Cultura"
+                    >
 
                         <div class="category-image category-cultura">
 
@@ -509,10 +641,13 @@
 
 
         <!-- =========================================
-             PRODUCTOS DESTACADOS
+             PRODUCTOS
         ========================================== -->
 
-        <section class="products-section" id="catalogo">
+        <section
+            class="products-section"
+            id="catalogo"
+        >
 
             <div class="section-container">
 
@@ -532,7 +667,10 @@
                     </div>
 
 
-                    <a href="#" class="view-all">
+                    <a
+                        href="#catalogo"
+                        class="view-all"
+                    >
 
                         Explorar catálogo
 
@@ -544,450 +682,145 @@
 
 
 
+                <!-- =========================================
+                     FILTROS
+                ========================================== -->
 
-<!-- FILTROS DEL CATÁLOGO -->
+                <div class="catalog-filters">
 
-<div class="catalog-filters">
 
-    <div class="filter-group">
+                    <!-- CATEGORÍA -->
 
-        <label for="categoryFilter">
-            Categoría
-        </label>
+                    <div class="filter-group">
 
-        <select id="categoryFilter">
+                        <label for="categoryFilter">
+                            Categoría
+                        </label>
 
-            <option value="todas">
-                Todas las categorías
-            </option>
+                        <select id="categoryFilter">
 
-            <option value="Ropa típica">
-                Ropa típica
-            </option>
+                            <option value="todas">
+                                Todas las categorías
+                            </option>
 
-            <option value="Artesanías">
-                Artesanías
-            </option>
+                            <option value="Ropa típica">
+                                Ropa típica
+                            </option>
 
-            <option value="Accesorios">
-                Accesorios
-            </option>
+                            <option value="Artesanías">
+                                Artesanías
+                            </option>
 
-            <option value="Hogar">
-                Hogar
-            </option>
+                            <option value="Accesorios">
+                                Accesorios
+                            </option>
 
-            <option value="Cultura">
-                Cultura
-            </option>
+                            <option value="Hogar">
+                                Hogar
+                            </option>
 
-        </select>
-
-    </div>
-
-
-    <div class="filter-group">
-
-        <label for="departmentFilter">
-            Departamento
-        </label>
-
-        <select id="departmentFilter">
-
-            <option value="todos">
-                Todos los departamentos
-            </option>
-
-            <option value="Masaya">
-                Masaya
-            </option>
-
-            <option value="León">
-                León
-            </option>
-
-            <option value="Diriamba">
-                Diriamba
-            </option>
-
-        </select>
-
-    </div>
-
-
-    <button id="clearFilters" class="clear-filters">
-        <i class="fa-solid fa-rotate-left"></i>
-        Limpiar filtros
-    </button>
-
-</div>
-
-<div class="catalog-results-info">
-    <span id="results-count">4 productos encontrados</span>
-</div>
-
-    <!-- PRODUCTOS -->
-
-               <div class="products-grid" id="products-grid">
-
-
-                    <!-- PRODUCTO 1 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <div class="product-placeholder">
-
-                                <i class="fa-solid fa-shirt"></i>
-
-                            </div>
-
-
-                            <span class="product-badge">
-                                Destacado
-                            </span>
-
-
-                            <button class="favorite-btn">
-
-                                <i class="fa-regular fa-heart"></i>
-
-                            </button>
-
-                        </div>
-
-
-                        <div class="product-info">
-
-                            <span class="product-origin">
-
-                                <i class="fa-solid fa-location-dot"></i>
-
-                                Masaya
-
-                            </span>
-
-
-                            <h3>
-                                Camisa tradicional
-                            </h3>
-
-
-                            <p>
-                                Diseño artesanal nicaragüense
-                            </p>
-
-
-                            <div class="product-pricing">
-
-                                <div>
-
-                                    <span class="price-label">
-                                        Desde
-                                    </span>
-
-                                    <strong>
-                                        C$200
-                                    </strong>
-
-                                </div>
-
-
-                                <span class="profit">
-
-                                    + C$80
-                                    potencial
-
-                                </span>
-
-                            </div>
-
-
-                            <button class="add-cart-btn">
-
-                                Agregar al carrito
-
-                                <i class="fa-solid fa-plus"></i>
-
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- PRODUCTO 2 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <div class="product-placeholder">
-
-                                <i class="fa-solid fa-couch"></i>
-
-                            </div>
-
-
-                            <span class="product-badge wholesale">
-                                Precio emprendedor
-                            </span>
-
-
-                            <button class="favorite-btn">
-
-                                <i class="fa-regular fa-heart"></i>
-
-                            </button>
-
-                        </div>
-
-
-                        <div class="product-info">
-
-                            <span class="product-origin">
-
-                                <i class="fa-solid fa-location-dot"></i>
-
-                                Masaya
-
-                            </span>
-
-
-                            <h3>
-                                Hamaca artesanal
-                            </h3>
-
-
-                            <p>
-                                Elaborada por artesanos locales
-                            </p>
-
-
-                            <div class="product-pricing">
-
-                                <div>
-
-                                    <span class="price-label">
-                                        Desde
-                                    </span>
-
-                                    <strong>
-                                        C$450
-                                    </strong>
-
-                                </div>
-
-
-                                <span class="profit">
-
-                                    + C$150
-                                    potencial
-
-                                </span>
-
-                            </div>
-
-
-                            <button class="add-cart-btn">
-
-                                Agregar al carrito
-
-                                <i class="fa-solid fa-plus"></i>
-
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- PRODUCTO 3 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <div class="product-placeholder">
-
-                                <i class="fa-solid fa-bag-shopping"></i>
-
-                            </div>
-
-
-                            <button class="favorite-btn">
-
-                                <i class="fa-regular fa-heart"></i>
-
-                            </button>
-
-                        </div>
-
-
-                        <div class="product-info">
-
-                            <span class="product-origin">
-
-                                <i class="fa-solid fa-location-dot"></i>
-
-                                León
-
-                            </span>
-
-
-                            <h3>
-                                Bolso artesanal
-                            </h3>
-
-
-                            <p>
-                                Hecho a mano con materiales locales
-                            </p>
-
-
-                            <div class="product-pricing">
-
-                                <div>
-
-                                    <span class="price-label">
-                                        Desde
-                                    </span>
-
-                                    <strong>
-                                        C$180
-                                    </strong>
-
-                                </div>
-
-
-                                <span class="profit">
-
-                                    + C$70
-                                    potencial
-
-                                </span>
-
-                            </div>
-
-
-                            <button class="add-cart-btn">
-
-                                Agregar al carrito
-
-                                <i class="fa-solid fa-plus"></i>
-
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- PRODUCTO 4 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image">
-
-                            <div class="product-placeholder">
-
-                                <i class="fa-solid fa-masks-theater"></i>
-
-                            </div>
-
-
-                            <span class="product-badge culture">
+                            <option value="Cultura">
                                 Cultura
-                            </span>
+                            </option>
+
+                        </select>
+
+                    </div>
 
 
-                            <button class="favorite-btn">
+                    <!-- DEPARTAMENTO -->
 
-                                <i class="fa-regular fa-heart"></i>
+                    <div class="filter-group">
 
-                            </button>
+                        <label for="departmentFilter">
+                            Departamento
+                        </label>
 
-                        </div>
+                        <select id="departmentFilter">
 
+                            <option value="todos">
+                                Todos los departamentos
+                            </option>
 
-                        <div class="product-info">
+                            <option value="Masaya">
+                                Masaya
+                            </option>
 
-                            <span class="product-origin">
+                            <option value="León">
+                                León
+                            </option>
 
-                                <i class="fa-solid fa-location-dot"></i>
-
+                            <option value="Diriamba">
                                 Diriamba
+                            </option>
 
-                            </span>
+                        </select>
 
-
-                            <h3>
-                                Máscara del Güegüense
-                            </h3>
+                    </div>
 
 
-                            <p>
-                                Pieza cultural artesanal
-                            </p>
+                    <!-- LIMPIAR -->
 
+                    <button
+                        id="clearFilters"
+                        class="clear-filters"
+                    >
 
-                            <div class="product-pricing">
+                        <i class="fa-solid fa-rotate-left"></i>
 
-                                <div>
+                        Limpiar filtros
 
-                                    <span class="price-label">
-                                        Desde
-                                    </span>
-
-                                    <strong>
-                                        C$350
-                                    </strong>
-
-                                </div>
-
-
-                                <span class="profit">
-
-                                    + C$120
-                                    potencial
-
-                                </span>
-
-                            </div>
-
-
-                            <button class="add-cart-btn">
-
-                                Agregar al carrito
-
-                                <i class="fa-solid fa-plus"></i>
-
-                            </button>
-
-                        </div>
-
-                    </article>
+                    </button>
 
                 </div>
+
+
+                <!-- RESULTADOS -->
+
+                <div class="catalog-results-info">
+
+                    <span id="results-count">
+                        4 productos encontrados
+                    </span>
+
+                </div>
+
+
+                <!-- =========================================
+                     PRODUCTOS
+                ========================================== -->
+
+                <div
+                    class="products-grid"
+                    id="products-grid"
+                >
+
+                    <!-- Los productos serán generados
+                         automáticamente por JavaScript -->
+
+                </div>
+
+            </div>
 
         </section>
 
 
 
         <!-- =========================================
-             COMO FUNCIONA
+             CÓMO FUNCIONA
         ========================================== -->
 
-        <section class="how-section" id="como-funciona">
+        <section
+            class="how-section"
+            id="como-funciona"
+        >
 
             <div class="section-container">
 
                 <div class="how-content">
 
+
+                    <!-- TEXTO -->
 
                     <div class="how-text">
 
@@ -996,10 +829,13 @@
                         </span>
 
                         <h2>
+
                             Convierte productos
                             <span>nicaragüenses</span>
                             en oportunidades.
+
                         </h2>
+
 
                         <p>
 
@@ -1009,7 +845,11 @@
 
                         </p>
 
-                        <button class="btn btn-primary">
+
+                        <button
+                            class="btn btn-primary"
+                            type="button"
+                        >
 
                             Conoce más
 
@@ -1021,8 +861,12 @@
 
 
 
+                    <!-- PASOS -->
+
                     <div class="steps">
 
+
+                        <!-- PASO 1 -->
 
                         <div class="step">
 
@@ -1046,6 +890,8 @@
                         </div>
 
 
+                        <!-- PASO 2 -->
+
                         <div class="step">
 
                             <div class="step-number">
@@ -1067,6 +913,8 @@
 
                         </div>
 
+
+                        <!-- PASO 3 -->
 
                         <div class="step">
 
@@ -1101,422 +949,885 @@
 
     </main>
 
-<!-- ==========================================
-     MODAL DEL CARRITO
-========================================== -->
-
-<div class="cart-modal" id="cartModal">
-
-    <div class="cart-overlay" id="cartOverlay"></div>
-
-    <div class="cart-panel">
-
-        <!-- ENCABEZADO -->
-
-        <div class="cart-header">
-
-            <div>
-                <span class="cart-header-label">
-                    ArteNik
-                </span>
-
-                <h2>
-                    Mi carrito
-                </h2>
-            </div>
-
-            <button
-                class="cart-close"
-                id="cartClose"
-                aria-label="Cerrar carrito"
-            >
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-        </div>
 
 
-        <!-- PRODUCTOS -->
+    <!-- =====================================================
+         MODAL DEL CARRITO
+    ====================================================== -->
 
-        <div class="cart-items" id="cartItems">
+    <div
+        class="cart-modal"
+        id="cartModal"
+    >
 
-            <!-- Los productos aparecerán aquí mediante JavaScript -->
-
-        </div>
-
-
-        <!-- RESUMEN -->
-
-        <div class="cart-summary">
-
-            <div class="cart-summary-row">
-
-                <span>
-                    Subtotal
-                </span>
-
-                <strong id="cartSubtotal">
-                    C$0
-                </strong>
-
-            </div>
-
-
-            <div class="cart-summary-row cart-total">
-
-                <span>
-                    Total
-                </span>
-
-                <strong id="cartTotal">
-                    C$0
-                </strong>
-
-            </div>
-
-
-            <button class="checkout-btn" id="checkoutBtn">
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-                Continuar con el pedido
-
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ==========================================
-     MODAL RESUMEN DEL PEDIDO
-========================================== -->
-
-<div class="order-modal" id="orderModal">
-
-    <div class="order-overlay" id="orderOverlay"></div>
-
-    <div class="order-panel">
-
-        <div class="order-header">
-
-            <div>
-                <span class="order-header-label">
-                    Tu pedido
-                </span>
-
-                <h2>
-                    Resumen del pedido
-                </h2>
-            </div>
-
-            <button
-                class="order-close"
-                id="orderClose"
-                aria-label="Cerrar"
-            >
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-        </div>
-
-
-        <!-- PRODUCTOS DEL PEDIDO -->
+        <!-- OVERLAY -->
 
         <div
-            class="order-items"
-            id="orderItems"
-        >
-        </div>
+            class="cart-overlay"
+            id="cartOverlay"
+        ></div>
 
 
-        <!-- RESUMEN -->
+        <!-- PANEL -->
 
-        <div class="order-summary">
+        <div class="cart-panel">
 
-            <div class="order-summary-row">
 
-                <span>
-                    Subtotal
-                </span>
+            <!-- ENCABEZADO -->
 
-                <strong id="orderSubtotal">
-                    C$0
-                </strong>
+            <div class="cart-header">
+
+                <div>
+
+                    <span class="cart-header-label">
+                        ArteNik
+                    </span>
+
+                    <h2>
+                        Mi carrito
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="cart-close"
+                    id="cartClose"
+                    aria-label="Cerrar carrito"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
 
             </div>
 
-
-            <div class="order-summary-row order-total">
-
-                <span>
-                    Total
-                </span>
-
-                <strong id="orderTotal">
-                    C$0
-                </strong>
-
-            </div>
-
-
-            <button
-                class="order-back-btn"
-                id="orderBackBtn"
-            >
-                <i class="fa-solid fa-arrow-left"></i>
-
-                Volver al carrito
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ==========================================
-     RESUMEN DEL PEDIDO
-========================================== -->
-
-<div class="order-modal" id="orderModal">
-
-    <div class="order-overlay" id="orderOverlay"></div>
-
-    <div class="order-panel">
-
-        <div class="order-header">
-
-            <div>
-                <span class="cart-header-label">
-                    ArteNik
-                </span>
-
-                <h2>Resumen del pedido</h2>
-            </div>
-
-            <button
-                class="order-close"
-                id="orderClose"
-                aria-label="Cerrar resumen"
-            >
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-        </div>
-
-
-        <div class="order-content">
 
             <!-- PRODUCTOS -->
 
-            <section class="order-section">
-
-                <div class="order-section-title">
-                    <i class="fa-solid fa-box"></i>
-                    <h3>Productos</h3>
-                </div>
-
-                <div id="orderItems" class="order-items">
-                    <!-- Los productos aparecerán aquí -->
-                </div>
-
-            </section>
-
-
-            <!-- DATOS DE ENTREGA -->
-
-            <section class="order-section">
-
-                <div class="order-section-title">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>Datos de entrega</h3>
-                </div>
-
-                <div class="order-form">
-
-                    <div class="form-group">
-
-                        <label for="customerName">
-                            Nombre completo
-                        </label>
-
-                        <input
-                            type="text"
-                            id="customerName"
-                            placeholder="Escribe tu nombre"
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="customerPhone">
-                            Teléfono
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="customerPhone"
-                            placeholder="Ej. 8888-8888"
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="customerDepartment">
-                            Departamento
-                        </label>
-
-                        <select id="customerDepartment">
-
-                            <option value="">
-                                Selecciona tu departamento
-                            </option>
-
-                            <option>Managua</option>
-                            <option>Masaya</option>
-                            <option>Granada</option>
-                            <option>León</option>
-                            <option>Carazo</option>
-                            <option>Rivas</option>
-                            <option>Chinandega</option>
-                            <option>Estelí</option>
-                            <option>Matagalpa</option>
-                            <option>Jinotega</option>
-                            <option>Boaco</option>
-                            <option>Chontales</option>
-                            <option>Nueva Segovia</option>
-                            <option>Madriz</option>
-                            <option>Río San Juan</option>
-                            <option>RACN</option>
-                            <option>RACCS</option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="customerAddress">
-                            Dirección de entrega
-                        </label>
-
-                        <textarea
-                            id="customerAddress"
-                            rows="3"
-                            placeholder="Escribe tu dirección o punto de referencia"
-                        ></textarea>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="orderNotes">
-                            Observaciones
-                            <span>(opcional)</span>
-                        </label>
-
-                        <textarea
-                            id="orderNotes"
-                            rows="3"
-                            placeholder="Alguna indicación para tu pedido..."
-                        ></textarea>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- RESUMEN DE COSTOS -->
-
-            <section class="order-section order-summary-section">
-
-                <div class="order-section-title">
-
-                    <i class="fa-solid fa-receipt"></i>
-
-                    <h3>Resumen de costos</h3>
-
-                </div>
-
-
-                <div class="order-summary">
-
-                    <div class="order-summary-row">
-
-                        <span>Subtotal</span>
-
-                        <strong id="orderSubtotal">
-                            C$0
-                        </strong>
-
-                    </div>
-
-
-                    <div class="order-summary-row">
-
-                        <span>Envío</span>
-
-                        <strong id="orderShipping">
-                            Pendiente
-                        </strong>
-
-                    </div>
-
-
-                    <div class="order-summary-row order-grand-total">
-
-                        <span>Total</span>
-
-                        <strong id="orderTotal">
-                            C$0
-                        </strong>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-        </div>
-
-
-        <div class="order-footer">
-
-            <button
-                class="order-back-btn"
-                id="orderBackBtn"
+            <div
+                class="cart-items"
+                id="cartItems"
             >
-                <i class="fa-solid fa-arrow-left"></i>
-                Volver al carrito
-            </button>
 
-            <button
-                class="confirm-order-btn"
-                id="confirmOrderBtn"
-            >
-                Confirmar pedido
-                <i class="fa-solid fa-check"></i>
-            </button>
+                <!-- JavaScript coloca aquí los productos -->
+
+            </div>
+
+
+            <!-- RESUMEN -->
+
+            <div class="cart-summary">
+
+
+                <div class="cart-summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="cartSubtotal">
+                        C$0
+                    </strong>
+
+                </div>
+
+
+                <div class="cart-summary-row cart-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="cartTotal">
+                        C$0
+                    </strong>
+
+                </div>
+
+
+                <!-- CONTINUAR -->
+
+                <button
+                    class="checkout-btn"
+                    id="checkoutBtn"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    Continuar con el pedido
+
+                </button>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
+
+
+    <!-- =====================================================
+         MODAL RESUMEN DEL PEDIDO
+         
+         IMPORTANTE:
+         ESTE ES EL ÚNICO orderModal DEL HTML
+    ====================================================== -->
+
+    <div
+        class="order-modal"
+        id="orderModal"
+    >
+
+        <!-- OVERLAY -->
+
+        <div
+            class="order-overlay"
+            id="orderOverlay"
+        ></div>
+
+
+        <!-- PANEL -->
+
+        <div class="order-panel">
+
+
+            <!-- =========================================
+                 ENCABEZADO
+            ========================================== -->
+
+            <div class="order-header">
+
+                <div>
+
+                    <span class="cart-header-label">
+                        ArteNik
+                    </span>
+
+                    <h2>
+                        Resumen del pedido
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="order-close"
+                    id="orderClose"
+                    aria-label="Cerrar resumen"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 CONTENIDO DEL PEDIDO
+            ========================================== -->
+
+            <div class="order-content">
+
+
+                <!-- =========================================
+                     PRODUCTOS
+                ========================================== -->
+
+                <section class="order-section">
+
+
+                    <div class="order-section-title">
+
+                        <i class="fa-solid fa-box"></i>
+
+                        <h3>
+                            Productos
+                        </h3>
+
+                    </div>
+
+
+                    <div
+                        id="orderItems"
+                        class="order-items"
+                    >
+
+                        <!-- JavaScript coloca aquí los productos -->
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     DATOS DE ENTREGA
+                ========================================== -->
+
+                <section class="order-section">
+
+
+                    <div class="order-section-title">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h3>
+                            Datos de entrega
+                        </h3>
+
+                    </div>
+
+
+                    <div class="order-form">
+
+
+                        <!-- NOMBRE -->
+
+                        <div class="form-group">
+
+                            <label for="customerName">
+                                Nombre completo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customerName"
+                                placeholder="Escribe tu nombre"
+                            >
+
+                        </div>
+
+
+                        <!-- TELÉFONO -->
+
+                        <div class="form-group">
+
+                            <label for="customerPhone">
+                                Teléfono
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="customerPhone"
+                                placeholder="Ej. 8888-8888"
+                            >
+
+                        </div>
+
+
+                        <!-- DEPARTAMENTO -->
+
+                        <div class="form-group">
+
+                            <label for="customerDepartment">
+                                Departamento
+                            </label>
+
+                            <select id="customerDepartment">
+
+                                <option value="">
+                                    Selecciona tu departamento
+                                </option>
+
+                                <option value="Managua">
+                                    Managua
+                                </option>
+
+                                <option value="Masaya">
+                                    Masaya
+                                </option>
+
+                                <option value="Granada">
+                                    Granada
+                                </option>
+
+                                <option value="León">
+                                    León
+                                </option>
+
+                                <option value="Carazo">
+                                    Carazo
+                                </option>
+
+                                <option value="Rivas">
+                                    Rivas
+                                </option>
+
+                                <option value="Chinandega">
+                                    Chinandega
+                                </option>
+
+                                <option value="Estelí">
+                                    Estelí
+                                </option>
+
+                                <option value="Matagalpa">
+                                    Matagalpa
+                                </option>
+
+                                <option value="Jinotega">
+                                    Jinotega
+                                </option>
+
+                                <option value="Boaco">
+                                    Boaco
+                                </option>
+
+                                <option value="Chontales">
+                                    Chontales
+                                </option>
+
+                                <option value="Nueva Segovia">
+                                    Nueva Segovia
+                                </option>
+
+                                <option value="Madriz">
+                                    Madriz
+                                </option>
+
+                                <option value="Río San Juan">
+                                    Río San Juan
+                                </option>
+
+                                <option value="RACN">
+                                    RACN
+                                </option>
+
+                                <option value="RACCS">
+                                    RACCS
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DIRECCIÓN -->
+
+                        <div class="form-group">
+
+                            <label for="customerAddress">
+                                Dirección de entrega
+                            </label>
+
+                            <textarea
+                                id="customerAddress"
+                                rows="3"
+                                placeholder="Escribe tu dirección o punto de referencia"
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- OBSERVACIONES -->
+
+                        <div class="form-group">
+
+                            <label for="orderNotes">
+
+                                Observaciones
+
+                                <span>
+                                    (opcional)
+                                </span>
+
+                            </label>
+
+                            <textarea
+                                id="orderNotes"
+                                rows="3"
+                                placeholder="Alguna indicación para tu pedido..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+              <!-- =========================================
+     MÉTODO DE PAGO
+========================================= -->
+
+<section class="order-section payment-section">
+
+    <div class="order-section-title">
+
+        <i class="fa-solid fa-credit-card"></i>
+
+        <h3>
+            Método de pago
+        </h3>
+
+    </div>
+
+
+    <p class="payment-description">
+        Selecciona cómo deseas realizar el pago de tu pedido.
+    </p>
+
 
     <!-- =========================================
-         FOOTER
+         OPCIONES DE PAGO
     ========================================== -->
+
+    <div class="payment-methods">
+
+
+        <!-- =====================================
+             TARJETA
+        ====================================== -->
+
+        <label class="payment-card">
+
+            <input
+                type="radio"
+                name="paymentMethod"
+                value="tarjeta"
+                checked
+            >
+
+            <div class="payment-card-content">
+
+                <div class="payment-icon">
+
+                    <i class="fa-solid fa-credit-card"></i>
+
+                </div>
+
+
+                <div class="payment-card-info">
+
+                    <strong>
+                        Tarjeta
+                    </strong>
+
+                    <span>
+                        Visa, Mastercard u otra tarjeta
+                    </span>
+
+                </div>
+
+
+                <div class="payment-check">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </div>
+
+            </div>
+
+        </label>
+
+
+
+        <!-- =====================================
+             TRANSFERENCIA BANCARIA
+        ====================================== -->
+
+        <label class="payment-card">
+
+            <input
+                type="radio"
+                name="paymentMethod"
+                value="transferencia"
+            >
+
+            <div class="payment-card-content">
+
+                <div class="payment-icon">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                </div>
+
+
+                <div class="payment-card-info">
+
+                    <strong>
+                        Transferencia bancaria
+                    </strong>
+
+                    <span>
+                        Realiza una transferencia desde tu banco
+                    </span>
+
+                </div>
+
+
+                <div class="payment-check">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </div>
+
+            </div>
+
+        </label>
+
+
+
+        <!-- =====================================
+             PAGO CONTRA ENTREGA
+        ====================================== -->
+
+        <label class="payment-card">
+
+            <input
+                type="radio"
+                name="paymentMethod"
+                value="contra_entrega"
+            >
+
+            <div class="payment-card-content">
+
+                <div class="payment-icon">
+
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+
+                </div>
+
+
+                <div class="payment-card-info">
+
+                    <strong>
+                        Pago contra entrega
+                    </strong>
+
+                    <span>
+                        Paga cuando recibas tu pedido
+                    </span>
+
+                </div>
+
+
+                <div class="payment-check">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </div>
+
+            </div>
+
+        </label>
+
+    </div>
+
+
+
+    <!-- =========================================
+         DATOS DE TARJETA
+    ========================================== -->
+
+    <div
+        class="payment-details"
+        id="cardPaymentDetails"
+    >
+
+        <div class="payment-details-header">
+
+            <i class="fa-solid fa-lock"></i>
+
+
+            <div>
+
+                <strong>
+                    Pago seguro
+                </strong>
+
+                <span>
+                    Tus datos de pago están protegidos.
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="payment-form-grid">
+
+
+            <!-- NÚMERO DE TARJETA -->
+
+            <div class="form-group payment-full">
+
+                <label for="cardNumber">
+                    Número de tarjeta
+                </label>
+
+                <input
+                    type="text"
+                    id="cardNumber"
+                    maxlength="19"
+                    placeholder="0000 0000 0000 0000"
+                    inputmode="numeric"
+                    autocomplete="cc-number"
+                >
+
+            </div>
+
+
+
+            <!-- NOMBRE -->
+
+            <div class="form-group">
+
+                <label for="cardName">
+                    Nombre en la tarjeta
+                </label>
+
+                <input
+                    type="text"
+                    id="cardName"
+                    placeholder="Nombre completo"
+                    autocomplete="cc-name"
+                >
+
+            </div>
+
+
+
+            <!-- VENCIMIENTO -->
+
+            <div class="form-group">
+
+                <label for="cardExpiry">
+                    Vencimiento
+                </label>
+
+                <input
+                    type="text"
+                    id="cardExpiry"
+                    maxlength="5"
+                    placeholder="MM/AA"
+                    inputmode="numeric"
+                    autocomplete="cc-exp"
+                >
+
+            </div>
+
+
+
+            <!-- CVV -->
+
+            <div class="form-group">
+
+                <label for="cardCVV">
+                    CVV
+                </label>
+
+                <input
+                    type="password"
+                    id="cardCVV"
+                    maxlength="4"
+                    placeholder="•••"
+                    inputmode="numeric"
+                    autocomplete="cc-csc"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         INFORMACIÓN DE TRANSFERENCIA
+    ========================================== -->
+
+    <div
+        class="payment-details"
+        id="transferPaymentDetails"
+        style="display: none;"
+    >
+
+        <div class="payment-details-header">
+
+            <i class="fa-solid fa-building-columns"></i>
+
+            <div>
+
+                <strong>
+                    Transferencia bancaria
+                </strong>
+
+                <span>
+                    Realiza la transferencia utilizando los datos
+                    que aparecerán al confirmar tu pedido.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         INFORMACIÓN CONTRA ENTREGA
+    ========================================== -->
+
+    <div
+        class="payment-details"
+        id="cashPaymentDetails"
+        style="display: none;"
+    >
+
+        <div class="payment-details-header">
+
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+
+            <div>
+
+                <strong>
+                    Pago contra entrega
+                </strong>
+
+                <span>
+                    Pagarás directamente al recibir tu pedido.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     RESUMEN DE COSTOS
+========================================== -->
+
+<section
+    class="order-section order-summary-section"
+>
+
+    <div class="order-section-title">
+
+        <i class="fa-solid fa-receipt"></i>
+
+        <h3>
+            Resumen de costos
+        </h3>
+
+    </div>
+
+
+    <div class="order-summary">
+
+
+        <!-- SUBTOTAL -->
+
+        <div class="order-summary-row">
+
+            <span>
+                Subtotal
+            </span>
+
+            <strong id="orderSubtotal">
+                C$0
+            </strong>
+
+        </div>
+
+
+        <!-- ENVÍO -->
+
+        <div class="order-summary-row">
+
+            <span>
+                Envío
+            </span>
+
+            <strong id="orderShipping">
+                Pendiente
+            </strong>
+
+        </div>
+
+
+        <!-- TOTAL -->
+
+        <div class="order-summary-row order-grand-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="orderTotal">
+                C$0
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+
+
+<!-- =========================================
+     FOOTER DEL PEDIDO
+========================================== -->
+
+<div class="order-footer">
+
+
+    <!-- VOLVER AL CARRITO -->
+
+    <button
+        class="order-back-btn"
+        id="orderBackBtn"
+        type="button"
+    >
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Volver al carrito
+
+    </button>
+
+
+
+    <!-- CONFIRMAR PEDIDO -->
+
+    <button
+        class="confirm-order-btn"
+        id="confirmOrderBtn"
+        type="button"
+    >
+
+        <span>
+            Confirmar pedido
+        </span>
+
+        <i class="fa-solid fa-check"></i>
+
+    </button>
+
+</div>
+
+
+</div>
+
+</div>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
     <footer class="footer">
 
@@ -1525,9 +1836,14 @@
             <div class="footer-content">
 
 
+                <!-- MARCA -->
+
                 <div class="footer-brand">
 
-                    <a href="#" class="logo">
+                    <a
+                        href="#"
+                        class="logo"
+                    >
 
                         <div class="logo-icon">
                             🇳🇮
@@ -1547,12 +1863,17 @@
 
 
                     <p>
+
                         Conectamos productos nicaragüenses
                         con nuevas oportunidades de negocio.
+
                     </p>
 
                 </div>
 
+
+
+                <!-- ENLACES ARTENIK -->
 
                 <div class="footer-links">
 
@@ -1560,7 +1881,7 @@
                         ArteNik
                     </h4>
 
-                    <a href="#">
+                    <a href="#inicio">
                         Inicio
                     </a>
 
@@ -1575,13 +1896,16 @@
                 </div>
 
 
+
+                <!-- AYUDA -->
+
                 <div class="footer-links">
 
                     <h4>
                         Ayuda
                     </h4>
 
-                    <a href="#">
+                    <a href="#como-funciona">
                         Cómo comprar
                     </a>
 
@@ -1598,6 +1922,9 @@
 
             </div>
 
+
+
+            <!-- FOOTER BOTTOM -->
 
             <div class="footer-bottom">
 
@@ -1617,9 +1944,12 @@
 
 
 
-    <!-- JavaScript -->
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
     <script src="js/app.js"></script>
+
 
 </body>
 
