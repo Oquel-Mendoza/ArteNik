@@ -117,50 +117,294 @@ const productos = [
 
     {
         id: 1,
-        nombre: "Camisa tradicional",
+        nombre: "Ropa típica de Boaco",
         categoria: "Ropa típica",
-        departamento: "Masaya",
+        departamento: "Boaco",
         precioNormal: 300,
         precioVolumen: 280,
         precioEmprendedor: 200,
-        ganancia: 80
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/boaco.jpg"
     },
 
     {
         id: 2,
-        nombre: "Hamaca artesanal",
-        categoria: "Hogar",
-        departamento: "Masaya",
-        precioNormal: 550,
-        precioVolumen: 500,
-        precioEmprendedor: 400,
-        ganancia: 150
+        nombre: "Ropa típica de Diriamba",
+        categoria: "Ropa típica",
+        departamento: "Diriamba",
+        precioNormal: 300,
+        precioVolumen: 280,
+        precioEmprendedor: 200,
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/diriamba.jpg"
     },
 
     {
         id: 3,
-        nombre: "Bolso artesanal",
-        categoria: "Accesorios",
-        departamento: "León",
+        nombre: "Ropa típica de El Viejo",
+        categoria: "Ropa típica",
+        departamento: "El Viejo",
         precioNormal: 300,
         precioVolumen: 280,
         precioEmprendedor: 200,
-        ganancia: 80
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/el viejo.jpg"
     },
 
     {
         id: 4,
-        nombre: "Máscara del Güegüense",
-        categoria: "Cultura",
-        departamento: "Diriamba",
-        precioNormal: 450,
-        precioVolumen: 400,
-        precioEmprendedor: 320,
-        ganancia: 120
-    }
+        nombre: "Ropa típica de Estelí",
+        categoria: "Ropa típica",
+        departamento: "Estelí",
+        precioNormal: 300,
+        precioVolumen: 280,
+        precioEmprendedor: 200,
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/esteli.jpg"
+    },
+
+    {
+        id: 5,
+        nombre: "Ropa típica de Jinotepe - Nagarote",
+        categoria: "Ropa típica",
+        departamento: "Jinotepe - Nagarote",
+        precioNormal: 300,
+        precioVolumen: 280,
+        precioEmprendedor: 200,
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/jinotepe -nagarote.jpg"
+    },
+
+    {
+        id: 6,
+        nombre: "Ropa típica de Managua",
+        categoria: "Ropa típica",
+        departamento: "Managua",
+        precioNormal: 300,
+        precioVolumen: 280,
+        precioEmprendedor: 200,
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/managua.jpg"
+    },
+
+    {
+        id: 7,
+        nombre: "Ropa típica de Nagarote",
+        categoria: "Ropa típica",
+        departamento: "Nagarote",
+        precioNormal: 300,
+        precioVolumen: 280,
+        precioEmprendedor: 200,
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/nagarote.jpg"
+    },
+
+    {
+        id: 8,
+        nombre: "Ropa típica de Nandaime",
+        categoria: "Ropa típica",
+        departamento: "Nandaime",
+        precioNormal: 300,
+        precioVolumen: 280,
+        precioEmprendedor: 200,
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/nandaime.jpg"
+    },
+
+    {
+        id: 9,
+        nombre: "Ropa típica de Nindirí",
+        categoria: "Ropa típica",
+        departamento: "Nindirí",
+        precioNormal: 300,
+        precioVolumen: 280,
+        precioEmprendedor: 200,
+        ganancia: 80,
+        imagen: "assets/productos/ropa-tipica/nindiri.jpg"
+    },
+
+{
+    id: 10,
+    nombre: "Adorno artesanal",
+    categoria: "Artesanías",
+    departamento: "Boaco",
+    precioNormal: 150,
+    precioVolumen: 120,
+    precioEmprendedor: 100,
+    ganancia: 50,
+    imagen: "assets/productos/artesanias/adorno.jpg"
+},
+
+{
+    id: 11,
+    nombre: "Barrito artesanal",
+    categoria: "Artesanías",
+    departamento: "Diriamba",
+    precioNormal: 150,
+    precioVolumen: 120,
+    precioEmprendedor: 80,
+    ganancia: 70,
+    imagen: "assets/productos/artesanias/barrito.jpg"
+},
+
+{
+    id: 12,
+    nombre: "Decoración para el hogar",
+    categoria: "Artesanías",
+    departamento: "El viejo",
+    precioNormal: 400,
+    precioVolumen: 360,
+    precioEmprendedor: 300,
+    ganancia: 100,
+    imagen: "assets/productos/artesanias/deco hogar.jpg"
+},
+
+{
+    id: 13,
+    nombre: "Florero artesanal",
+    categoria: "Artesanías",
+    departamento: "Masaya",
+    precioNormal: 450,
+    precioVolumen: 400,
+    precioEmprendedor: 320,
+    ganancia: 130,
+    imagen: "assets/productos/artesanias/florero.jpg"
+},
+
+{
+    id: 14,
+    nombre: "Hamaca artesanal",
+    categoria: "Artesanías",
+    departamento: "Masaya",
+    precioNormal: 550,
+    precioVolumen: 500,
+    precioEmprendedor: 400,
+    ganancia: 150,
+    imagen: "assets/productos/artesanias/hamaca.webp"
+},
+
+{
+    id: 15,
+    nombre: "Cuadro de sacuanjoche",
+    categoria: "Artesanías",
+    departamento: "Masaya",
+    precioNormal: 300,
+    precioVolumen: 250,
+    precioEmprendedor: 150,
+    ganancia: 50,
+    imagen: "assets/productos/artesanias/sacuanj-cuadro.png"
+},
+
+{
+    id: 16,
+    nombre: "Tazas artesanales",
+    categoria: "Artesanías",
+    departamento: "Masaya",
+    precioNormal: 300,
+    precioVolumen: 270,
+    precioEmprendedor: 220,
+    ganancia: 80,
+    imagen: "assets/productos/artesanias/tazas.jpg"
+},
+
+{
+    id: 17,
+    nombre: "Alcancía artesanal",
+    categoria: "Accesorios",
+    departamento: "Boaco",
+    precioNormal: 250,
+    precioVolumen: 220,
+    precioEmprendedor: 180,
+    ganancia: 70,
+    imagen: "assets/productos/accesorios/alcancias.jpg"
+},
+
+{
+    id: 18,
+    nombre: "Accesorio de barro",
+    categoria: "Accesorios",
+    departamento: "Diriamba",
+    precioNormal: 300,
+    precioVolumen: 270,
+    precioEmprendedor: 220,
+    ganancia: 80,
+    imagen: "assets/productos/accesorios/barro.jpg"
+},
+
+{
+    id: 19,
+    nombre: "Billetera artesanal",
+    categoria: "Accesorios",
+    departamento: "El Viejo",
+    precioNormal: 350,
+    precioVolumen: 320,
+    precioEmprendedor: 260,
+    ganancia: 90,
+    imagen: "assets/productos/accesorios/billeteras.jpg"
+},
+
+{
+    id: 20,
+    nombre: "Bolso artesanal",
+    categoria: "Accesorios",
+    departamento: "Estelí",
+    precioNormal: 450,
+    precioVolumen: 400,
+    precioEmprendedor: 320,
+    ganancia: 130,
+    imagen: "assets/productos/accesorios/bolsos.jpg"
+},
+
+{
+    id: 21,
+    nombre: "Pulseras artesanales",
+    categoria: "Accesorios",
+    departamento: "Jinotepe - Nagarote",
+    precioNormal: 200,
+    precioVolumen: 180,
+    precioEmprendedor: 150,
+    ganancia: 50,
+    imagen: "assets/productos/accesorios/pulseras.jpg"
+},
+
+{
+    id: 22,
+    nombre: "Sandalias artesanales",
+    categoria: "Accesorios",
+    departamento: "Managua",
+    precioNormal: 500,
+    precioVolumen: 450,
+    precioEmprendedor: 380,
+    ganancia: 120,
+    imagen: "assets/productos/accesorios/sandalias.jpg"
+},
+
+{
+    id: 23,
+    nombre: "Sombrero artesanal",
+    categoria: "Accesorios",
+    departamento: "Nagarote",
+    precioNormal: 400,
+    precioVolumen: 360,
+    precioEmprendedor: 300,
+    ganancia: 100,
+    imagen: "assets/productos/accesorios/sombrero.jpg"
+},
+
+{
+    id: 24,
+    nombre: "Utensilios artesanales",
+    categoria: "Accesorios",
+    departamento: "Nandaime",
+    precioNormal: 350,
+    precioVolumen: 320,
+    precioEmprendedor: 260,
+    ganancia: 90,
+    imagen: "assets/productos/accesorios/utensilios.jpg"
+}
+
 
 ];
-
 
 // =========================================================
 // CALCULAR TOTAL BASE
@@ -1711,19 +1955,13 @@ function mostrarProductos(listaProductos) {
 
         tarjeta.innerHTML = `
 
-            <div class="product-image">
-
-                <div class="product-placeholder">
-
-                    <i class="fa-solid fa-image"></i>
-
-                    <span>
-                        Imagen del producto
-                    </span>
-
-                </div>
-
-
+           <div class="product-image">
+             <img
+        class="product-img"
+        src="${producto.imagen || 'assets/images/producto-default.png'}"
+        alt="${producto.nombre}"
+    >
+    
                 <button
                     class="favorite-btn"
                     data-id="${producto.id}"

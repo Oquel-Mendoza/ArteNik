@@ -3490,3 +3490,718 @@ img {
     }
 
 }
+
+/* ==========================================
+   LOGO OFICIAL ARTENIK
+========================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 145px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+    .logo img {
+        width: 150px;
+    }
+}
+
+/* Celular */
+@media (max-width: 420px) {
+    .logo img {
+        width: 135px;
+    }
+}
+
+/* ==========================================
+   IMAGEN PRINCIPAL DEL HERO
+========================================== */
+
+.hero-image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    background: #f5f1e8;
+}
+
+.hero-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .hero-image-placeholder {
+        min-height: 400px;
+    }
+
+    .hero-image-placeholder img {
+        min-height: 400px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hero-image-placeholder {
+        min-height: 320px;
+        border-radius: 18px;
+    }
+
+    .hero-image-placeholder img {
+        min-height: 320px;
+    }
+
+}
+
+/* ==========================================
+   HERO - IMAGEN A PANTALLA COMPLETA
+========================================== */
+
+.hero-full {
+    position: relative;
+    min-height: 650px;
+
+    background-image: url("../assets/images/hero-artesania.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Capa para que el texto se lea bien */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.96) 0%,
+            rgba(255, 255, 255, 0.90) 30%,
+            rgba(255, 255, 255, 0.35) 52%,
+            rgba(255, 255, 255, 0.05) 75%
+        );
+
+    z-index: 1;
+}
+
+/* Contenido */
+
+.hero-full .hero-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+/* Texto */
+
+.hero-full .hero-content {
+    max-width: 590px;
+}
+
+.hero-full .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #c9922e;
+    font-weight: 700;
+    font-size: 15px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.hero-full h1 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+
+    margin: 0 0 25px;
+
+    color: #123b5d;
+    font-weight: 800;
+}
+
+.hero-full h1 span {
+    display: inline;
+    color: #c9922e;
+}
+
+.hero-full p {
+    max-width: 530px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #263746;
+
+    margin-bottom: 30px;
+}
+
+/* Botones */
+
+.hero-full .hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-full .btn {
+    min-height: 52px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 0 25px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.hero-full .btn-primary {
+    background: #123b5d;
+    color: #fff;
+}
+
+.hero-full .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(18, 59, 93, 0.25);
+}
+
+.hero-full .btn-outline {
+    background: rgba(255, 255, 255, 0.85);
+
+    border: 2px solid #c9922e;
+
+    color: #123b5d;
+}
+
+.hero-full .btn-outline:hover {
+    background: #c9922e;
+    color: #fff;
+}
+
+/* ==========================================
+   ESTADÍSTICAS
+========================================== */
+
+.hero-full .hero-stats {
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 45px;
+}
+
+.hero-full .stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-full .stat strong {
+    font-size: 28px;
+    color: #123b5d;
+}
+
+.hero-full .stat span {
+    font-size: 14px;
+    color: #4c5b66;
+}
+
+/* ==========================================
+   TARJETA FLOTANTE
+========================================== */
+
+.hero-full .floating-card {
+    position: absolute;
+
+    z-index: 3;
+
+    right: 55px;
+    bottom: 45px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 20px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border-radius: 14px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+    backdrop-filter: blur(8px);
+}
+
+.hero-full .floating-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #c9922e;
+    color: white;
+
+    font-size: 18px;
+}
+
+.hero-full .floating-card strong {
+    display: block;
+
+    color: #123b5d;
+    font-size: 15px;
+}
+
+.hero-full .floating-card span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #66727b;
+    font-size: 13px;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .hero-full {
+        min-height: 620px;
+
+        background-position: 60% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.96) 0%,
+                rgba(255, 255, 255, 0.82) 50%,
+                rgba(255, 255, 255, 0.25) 100%
+            );
+    }
+
+    .hero-full .hero-container {
+        padding: 70px 30px;
+    }
+
+    .hero-full .hero-content {
+        max-width: 520px;
+    }
+
+    .hero-full .floating-card {
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+
+    .hero-full {
+        min-height: 700px;
+
+        background-position: 65% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.96) 0%,
+                rgba(255, 255, 255, 0.90) 55%,
+                rgba(255, 255, 255, 0.35) 100%
+            );
+    }
+
+    .hero-full .hero-container {
+        padding: 55px 20px 160px;
+    }
+
+    .hero-full h1 {
+        font-size: 42px;
+    }
+
+    .hero-full p {
+        font-size: 16px;
+    }
+
+    .hero-full .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-full .btn {
+        width: 100%;
+    }
+
+    .hero-full .hero-stats {
+        gap: 20px;
+        margin-top: 35px;
+    }
+
+    .hero-full .stat strong {
+        font-size: 23px;
+    }
+
+    .hero-full .stat span {
+        font-size: 12px;
+    }
+
+    .hero-full .floating-card {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+/* ==========================================
+   IMÁGENES DE PRODUCTOS
+========================================== */
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+    display: block;
+
+    object-fit: contain;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================================================
+   TARJETAS DE PRODUCTOS - DISEÑO FINAL
+========================================================= */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid #e6e1d8;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(18, 59, 93, 0.12);
+}
+
+/* IMAGEN */
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #f7f4ee;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.04);
+}
+
+/* BOTÓN FAVORITOS */
+
+.product-image .favorite-btn {
+    z-index: 5;
+}
+
+/* INFORMACIÓN */
+
+.product-info {
+    display: block !important;
+    visibility: visible !important;
+
+    padding: 18px;
+
+    background: #ffffff;
+
+    color: #123b5d;
+}
+
+/* PROCEDENCIA */
+
+.product-origin {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-bottom: 6px;
+
+    color: #c9922e;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* NOMBRE */
+
+.product-info h3 {
+    display: block !important;
+
+    margin: 5px 0 4px;
+
+    color: #123b5d;
+
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+/* CATEGORÍA */
+
+.product-category {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #7b858c;
+    font-size: 11px;
+}
+
+/* PRECIOS */
+
+.product-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-label {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #8b9297;
+    font-size: 10px;
+}
+
+.product-price strong {
+    color: #123b5d;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.profit {
+    white-space: nowrap;
+
+    color: #27845c;
+    background: #edf7f1;
+
+    padding: 6px 8px;
+
+    border-radius: 8px;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+/* PRECIOS ADICIONALES */
+
+.product-prices-mini {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    margin-bottom: 14px;
+
+    padding: 10px 12px;
+
+    background: #f8f6f1;
+
+    border-radius: 10px;
+
+    font-size: 10px;
+    color: #68737b;
+}
+
+.product-prices-mini strong {
+    color: #123b5d;
+}
+
+/* BOTÓN CARRITO */
+
+.add-cart-btn {
+    width: 100%;
+    min-height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #123b5d;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.add-cart-btn:hover {
+    background: #c9922e;
+    transform: translateY(-1px);
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .product-image {
+        height: 280px;
+    }
+
+    .product-info {
+        padding: 16px;
+    }
+
+    .product-info h3 {
+        font-size: 19px;
+    }
+
+}
+
+/* Nombre del producto */
+.product-info h3 {
+    display: block;
+    margin: 8px 0 6px;
+
+    color: #123b5d;
+
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+/* ==========================================
+   INFORMACIÓN DE PRODUCTOS
+========================================== */
+
+.product-info {
+    display: block !important;
+    visibility: visible !important;
+    padding: 18px;
+    background: #ffffff;
+    color: #123b5d;
+}
+
+.product-origin {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    color: #c9922e;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.product-info h3 {
+    display: block !important;
+    visibility: visible !important;
+    margin: 5px 0 4px;
+    color: #123b5d;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.product-category {
+    display: block;
+    margin-bottom: 15px;
+    color: #7b858c;
+    font-size: 11px;
+}
+
