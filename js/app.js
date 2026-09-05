@@ -2703,3 +2703,27 @@ if (cardExpiry) {
     );
 
 }
+
+// ==========================================
+// BOTÓN CONOCE MÁS
+// ==========================================
+
+const btnConoceMas = document.getElementById("btnConoceMas");
+
+if (btnConoceMas) {
+    btnConoceMas.addEventListener("click", () => {
+
+        const seccionConoceMas =
+            document.getElementById("conoce-mas");
+
+        if (seccionConoceMas) {
+
+            seccionConoceMas.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+    });
+}
